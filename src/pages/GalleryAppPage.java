@@ -51,9 +51,4 @@ public class GalleryAppPage extends BasicPage {
 		this.getFilterButton().click();
 	}
 
-	public void MyGallery(String search) {
-		this.getMyGalleryesButton().click();
-
-	}
-
 }
