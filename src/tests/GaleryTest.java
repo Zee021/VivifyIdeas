@@ -53,4 +53,16 @@ public class GaleryTest extends BasicTest {
 		Thread.sleep(5000);
 
 	}
+
+	@Test(priority = 5)
+	public void myGalleryTest() throws InterruptedException, IOException {
+
+		this.driver.navigate().to(galleryAppURL);
+		Thread.sleep(2000);
+		this.loginPage.logIn(email, password);
+		Thread.sleep(2000);
+		this.galleryAppPage.MyGallery(search);
+		Thread.sleep(2000);
+		this.galleryAppPage.logOut();
+	}
 }
